@@ -1,0 +1,29 @@
+node_modules/
+.expo/
+dist/
+web-build/
+.DS_Store
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Native builds
+ios/
+android/
+
+# Credentials & keystores
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# Logs & caches
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.claude-logs/
+.gemini/

@@ -1,0 +1,100 @@
+{
+  "expo": {
+    "name": "FilmBox",
+    "slug": "filmbox",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "filmbox",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "updates": {
+      "enabled": false
+    },
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F0A00"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourcompany.myapp",
+      "associatedDomains": [
+        "applinks:REPLACE_WITH_YOUR_DOMAIN"
+      ]
+    },
+    "android": {
+      "package": "com.yourcompany.myapp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#0F0A00"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
+      "androidStatusBar": {
+        "barStyle": "light-content",
+        "backgroundColor": "#0F0A00",
+        "translucent": true
+      },
+      "predictiveBackGestureEnabled": false,
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "filmbox"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-image",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "FilmBox needs your camera to take photos for the event."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0F0A00",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200
+        }
+      ],
+      "expo-secure-store",
+      "expo-localization",
+      "expo-font",
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "project": "react-native",
+          "organization": "your-org"
+        }
+      ],
+      "@sentry/react-native",
+      "expo-sharing"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "REPLACE_WITH_YOUR_EAS_PROJECT_ID"
+      }
+    },
+    "owner": "REPLACE_WITH_YOUR_EXPO_OWNER"
+  }
+}
